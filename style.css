@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 28px; 
+    font-weight: 500;
+    margin: 20px 0;
+    color: white;
+}
+
+.hero h1 span {
+    color: #ec3b55;
+}
+
+textarea {
+    width: 100%;
+    height: 150px; 
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 15px;
+    resize: none;
+    background: #403d84;
+    color: #fff;
+    font-size: 14px; 
+    margin-bottom: 10px;
+}
+
+textarea::placeholder {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background: #ff2963;
+    color: #fff;
+    font-size: 14px; 
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+button img {
+    width: 14px;
+    margin-right: 8px;
+}
+
+select {
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 40px; 
+    padding: 0 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 25px;
+    appearance: none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 50%;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px; 
+    }
+
+    textarea {
+        height: 120px; 
+        font-size: 13px;   
+    }
+
+    button {
+        font-size: 13px; 
+        padding: 6px 15px;
+        margin-top: 10px;
+    }
+
+    select {
+        height: 35px;
+        padding: 0 12px;
+        background-size: 10px;
+        background-position-x: calc(100% - 12px);
+        margin-top: 10px;
+    }
+}
